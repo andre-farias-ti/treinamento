@@ -15,6 +15,11 @@ import com.indracompany.treinamento.util.CpfUtil;
 @Service
 public class ClienteService extends GenericCrudService<Cliente, Long, ClienteRepository>{
 
+	/**
+	 * 
+	 * @param cpf
+	 * @return
+	 */
 	public ClienteDTO buscarClientePorCPF(String cpf) {
 		boolean cpfValido = cpf != null && CpfUtil.validaCPF(cpf);
 		
@@ -42,7 +47,7 @@ public class ClienteService extends GenericCrudService<Cliente, Long, ClienteRep
 	}
 
 	/**
-	 * 
+	 *
 	 * @param nome
 	 * @return
 	 */
