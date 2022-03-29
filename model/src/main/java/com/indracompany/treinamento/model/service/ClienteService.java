@@ -40,7 +40,12 @@ public class ClienteService extends GenericCrudService<Cliente, Long, ClienteRep
 		}
 		
 	}
-	
+
+	/**
+	 * 
+	 * @param nome
+	 * @return
+	 */
 	public List<ClienteDTO> buscarClientePorNome(String nome) {
 		boolean nomeValido = nome != null;
 		
